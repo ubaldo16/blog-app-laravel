@@ -1,13 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Services</title>
-</head>
-<body>
-    <h1>Services</h1>
-    <p>this is the services page.</p>
-</body>
-</html>
+@extends('layouts.app')
+
+@section('title', 'Services')
+
+@section('content')
+    <h1 class="text-center">Services</h1>
+    <p class="text-success">This is the services page.</p>
+    <p>Services with id = {{ $idForView }} and cost = {{ $costForView }}</p>
+
+@endsection
+    
