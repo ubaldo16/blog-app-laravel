@@ -18,10 +18,12 @@ class PagesController extends Controller
     {
         $id = request('id');
         $cost = request('cost');
+        $data = ['Web Design', 'Programing', 'SEO', 'Marketing'];
 //        return 'Service with id = ' . $id . ' and cost = ' . $cost;
         return view('pages.services', [
             'idForView' => $id,
-            'costForView' => $cost
+            'costForView' => $cost,
+            'services' => $data
         ]);
     }
 }
